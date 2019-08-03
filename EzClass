@@ -1,25 +1,25 @@
 <?php
 
-class zalupa {
+class zalup {
     
     // данные (свойства):
 var $name = '10';
  
-    function Getname() {
-    echo 'самая огромная залупа была длинной '.$this->name.'sm<br/>';
+    function get_name() {
+    echo 'самая огромная была длинной '.$this->name.'sm<br/>';
     }
 
-    function pizdabolstvo($name) {
-    echo 'самая огромная залупа была длинной '. $this->name = $name.'sm';
+    function piz($name) {
+    echo 'самая огромная была длинной '. $this->name = $name.'sm';
     }
 
 }
  
-$b = new zalupa(); 
+$b = new zalup(); 
 
-$b->Getname(); 
+$b->get_name(); 
  
-$b->pizdabolstvo('40');
+$b->piz('40');
 
 
  
