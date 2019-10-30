@@ -1,8 +1,8 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8");
 $sum = "2,485"; 
-$to = 'https://ru.investing.com/currencies/gau-usd-converter'; // донор
-$ref = 'https://ru.investing.com'; // рефер
+$to = 'https://asdsadasdad'; // донор
+$ref = 'https://asdsadsadasdsad'; // рефер
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $to);
 curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -15,7 +15,6 @@ curl_close($ch);
 preg_match_all('#<span\s*id="fl_header_pair_lst(.+?)</span>#is', $content, $arr);
 $gold_price = strip_tags(str_replace(' ','', $arr[0][0]));
 ?>
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -27,7 +26,6 @@ $gold_price = strip_tags(str_replace(' ','', $arr[0][0]));
     	echo $gold_price."<br>"; 
     	echo round($gold_price * $sum / 100, 8)."<br>";
     	echo round($gold_price * $sum / 1000, 8);
-
     ?> 
 </body>
 </html>
